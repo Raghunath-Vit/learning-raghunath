@@ -1,0 +1,39 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.product-item {
+    display:flex;
+    flex-wrap: wrap;
+    background-color: ghostwhite;
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    align-items: center;
+    text-align: start;
+}
+
+.image-container{
+    margin-right:1rem;
+    
+}
+
+.product-inner {
+    text-align: left;
+    height:120px;
+    
+}
+
+.product-inner img {
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+}
+
+.product-inner p {
+    margin-bottom: 10px;
+}
