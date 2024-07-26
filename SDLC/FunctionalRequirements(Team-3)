@@ -1,0 +1,70 @@
+Requirements
+
+
+11. Accumulating Loyalty points- Redeem coupons, discounts on purchase.
+
+Customers can get the redeem coupons for every purchase.
+Customers can get redeem points based on the amount of billing and extra points based on the number of purchases in the account, and by signing up with their email they will get some redeem points.
+Customers will get discounts on the mode of payment based on payment system like credit cards, there will be a provided offer based on their bank offers, and based on the amount of billing also they will get discount on there final prices, and they will make use of their coupon codes received on their previous purchases.
+
+12. Customer support   
+
+
+Customers need to contact the manual customer care or AI chatbot. By customer care they will contact directly with customer care members on chat or call. If an AI chatbot is selected based on the queries they will get the response from the AI in the chat in the form of FAQ.
+Based on the queries the discussion will go on. If the issue is resolved the customer needs to give the feedback on the service provided by the customer support, If not they will make arrangements to contact the higher officials based on the issue.
+Customer will have a complaint box also for mentioning their problems on delivering the products, that the customer needs to mention the problem clearly in the description box they provided with the photo of the damaged item. Then based on the scenario the customer care will contact the user.
+
+13. Advance search and filters
+
+Advance Search will work on a review based system. Number of reviews and ratings are considered for top products so that users can see good products and badly reviewed products at bottom.
+Customers can choose from a wide variety of categories like vegetables, fruits etc., in the search menu for the category the user is searching.
+Filters like choosing price range, seller brand and tentative date of delivery for customers to choose which product to choose.
+
+
+
+
+
+
+
+
+14. Add to cart:
+Customers can add the same items with the symbols ‘+’  and reduce with “-” based on the options. And also update the products added.
+Customers will also be shown frequently bought products , with the options to add.
+Customers will get details of the product with the photo and pricing.
+Coupon Codes will be directly applied based on coupon codes available to the customer.
+
+
+
+15. Secure Check Out:
+
+Customer can go to cart option and from there they move to payment options where they have different methods like pay by UPI, pay bi credit/debit card, pay by coupon coins, and pay in emi too from external gateway methods.
+At payment, the payment will generate one hash which is valid for 5 minutes to its expiration,  till that time the user cannot refresh and pay in that time if the user cannot make payments then payment gateway automatically gets closed. And in case payment is stuck in between in processing then money gets rolled back to the user account with the proper information.
+After hash expiration, the user directly moved to his cart section, in order to re-attempt the check out function or can move out. 
+
+
+16. Exclusive offers and promotion
+
+Exclusive offers will be given to customers on festivals and holidays which will be notified to customers beforehand and by adding posters to the home page, So the user can see offers. 
+Customers will be provided details of exclusive offers and based on the email they signed up in and also will be notified on the mobile number through SMS based on details they are provided.
+Frequently purchased items will be notified to customers on the Exclusive offers if prices are low.
+
+
+
+17. FAQ Question: 
+Customers will get to answer some FAQ’s based on the questions that every customer faced while buying that product.
+The customer will get that FAQ’s section very next to the reviews on that product then every customer will go to see the reviews of the product so that it will help them to see the questions also for getting more clarity. 
+
+
+
+18. Multiple Language Support
+By default, the English language will be presented. Also based on their geolocation regional language will be there. Also they have a modification option in order to change the language to their preferred language. If they modified the language then whole  E-Commerce language changed to preferred language until the next time user change again
+They also have default restore options in case they want to move to the default language.
+They also have a language option for chatbot with voice options for both speaking and listening.
+
+19.Chat bot
+Customer will get to know about the main description like how much quantity of the product , if he/she wants any more details will use a chatbot .
+The details they will get from chatbot other than description like from where the product is coming to the customer and how was the quantity and quality they will know by the chatbot and by what time the product will get to delivered to the customer and when the product is manufactured also. These things they will get to know by the options provided by the chatbot on every question.
+
+20.Previously ordered item
+For the previously ordered item , the customer can see the option “previously ordered items” in the cart page and the customer can add that item with a click of “Buy Again”. And it automatically adds to the cart with the quantity they mentioned last time. 
+If they want they can update the order list based on their preferences.
