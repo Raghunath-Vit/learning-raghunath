@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './App.css'; // Import the CSS file
 
 const App = () => {
   const [cards, setCards] = useState([]);
@@ -9,7 +10,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <Form onSubmit={addNewCard} />
       <CardList cards={cards} />
     </div>
@@ -18,18 +19,18 @@ const App = () => {
 
 const Card = props => {
   return (
-    <div style={{ margin: '1em' }}>
-      <img alt="avatar" style={{ width: '70px' }} src={props.avatar_url} />
+    <div className="card">
+      <img alt="avatar" src={props.avatar_url} />
       <div>
-        <div style={{ fontWeight: 'bold' }}>{props.name}</div>
-        <div>{props.blog}</div>
+        <div className="card-header">{props.name}</div>
+        <div className="card-content">{props.blog}</div>
       </div>
     </div>
   );
 };
 
 const CardList = props => (
-  <div>
+  <div className="card-list">
     {props.cards.map((card, index) => (
       <Card key={index} {...card} />
     ))}
@@ -50,7 +51,7 @@ const Form = props => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form-container" onSubmit={handleSubmit}>
       <input
         type="text"
         value={username}
@@ -58,7 +59,7 @@ const Form = props => {
         placeholder="GitHub username"
         required
       />
-      <button type="submit">Add card</button>
+      <button className="button" type="submit">Add card</button>
     </form>
   );
 };
