@@ -1,0 +1,81 @@
+Basic container styles
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+input[type="text"], select {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 1rem;
+  color: #fff;
+  background-color: #28a745;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px; /* Margin between buttons and other elements */
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Todo item styles */
+.todo-item {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item div {
+  margin-right: 10px;
+}
+
+.todo-item button {
+  margin-left: 10px;
+  background-color: #dc3545;
+}
+
+.todo-item button:hover {
+  background-color: #c82333;
+}
+
+
+.listtodo{
+  margin-top: 2rem;
+}
