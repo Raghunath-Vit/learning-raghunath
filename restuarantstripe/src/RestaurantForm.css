@@ -1,0 +1,163 @@
+.container {
+    width: 90%; 
+    margin: 0 auto;
+  }
+  
+  .form-container {
+    max-width: 800px; 
+    margin: 2rem auto; 
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .form-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-container div {
+    margin-bottom: 1rem;
+  }
+  
+  .form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="email"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-container input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  .form-container .error {
+    color: red;
+    font-size: 0.875rem;
+  }
+  
+  .form-container button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; 
+  }
+  
+  .submit-button {
+    background-color: #eb5237; 
+    color: white;
+  }
+  .submit-button:hover{
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    color: white;
+  }
+
+  
+  .cancel-button {
+    background-color: #6c757d; 
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background-color: #5a6268; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .restaurant-list {
+    margin-bottom: 2rem;
+  }
+  
+  .restaurant-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem; 
+    padding: 0.75rem;
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .details-button,
+  .delete-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+  
+  .details-button {
+    background-color: #17a2b8; 
+    color: white;
+  }
+  
+  .details-button:hover {
+    background-color: #117a8b; 
+  }
+  
+  .delete-button {
+    background-color: #dc3545; 
+    color: white;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333; 
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 1rem;
+  }
+  
+  .restaurant-details {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .edit-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; 
+    color: white;
+    cursor: pointer;
+    margin-right: 0.5rem;
+  }
+  
+  .edit-button:hover {
+    background-color: #0056b3; 
+  }
+  
+  .close-button {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #343a40; 
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  .close-button:hover {
+    background-color: #23272b; 
+  }
+  
