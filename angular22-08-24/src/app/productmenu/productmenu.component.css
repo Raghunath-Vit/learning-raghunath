@@ -1,0 +1,32 @@
+.product-menu {
+    background-color: #282c34;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .product-menu li {
+    margin: 0 15px;
+  }
+  
+  .product-menu a {
+    color: #61dafb;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .product-menu a:hover {
+    background-color: #61dafb;
+    color: #282c34;
+    border-radius: 4px;
+  }
+  

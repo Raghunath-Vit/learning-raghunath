@@ -1,0 +1,36 @@
+.footer-container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-nav {
+    margin-bottom: 10px;
+  }
+  
+  .footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-menu li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .footer-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-menu a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-info {
+    margin-top: 10px;
+  }
+  

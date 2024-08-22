@@ -1,0 +1,67 @@
+<h1 class="headPage">Add New Product</h1>
+<div class="form-container">
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Product Name</label>
+      <input id="name" formControlName="name" type="text" />
+      <div *ngIf="productForm.get('name')?.invalid && productForm.get('name')?.touched" class="error">
+        Product Name is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="code">Product Code</label>
+      <input id="code" formControlName="code" type="text" />
+      <div *ngIf="productForm.get('code')?.invalid && productForm.get('code')?.touched" class="error">
+        Product Code is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="excerpt">Excerpt</label>
+      <input id="excerpt" formControlName="excerpt" type="text" />
+      <div *ngIf="productForm.get('excerpt')?.invalid && productForm.get('excerpt')?.touched" class="error">
+        Excerpt is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea id="description" formControlName="description"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="category">Category</label>
+      <select id="category" formControlName="category">
+        <option *ngFor="let category of categories" [value]="category._id">
+          {{ category.name }}
+        </option>
+      </select>
+      <div *ngIf="productForm.get('category')?.invalid && productForm.get('category')?.touched" class="error">
+        Category is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input id="price" formControlName="price" type="number" />
+      <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched" class="error">
+        Valid Price is required and should be greater than 0.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="stock">Stock</label>
+      <input id="stock" formControlName="stock" type="number" />
+      <div *ngIf="productForm.get('stock')?.invalid && productForm.get('stock')?.touched" class="error">
+        Valid Stock is required and should be greater than 0.
+      </div>
+    </div>
+
+    <div class="form-footer">
+      <button type="submit" [disabled]="loading">Submit</button>
+      <div *ngIf="loading" class="loading">Submitting...</div>
+      <div *ngIf="error" class="error">{{ error }}</div>
+    </div>
+  </form>
+</div>

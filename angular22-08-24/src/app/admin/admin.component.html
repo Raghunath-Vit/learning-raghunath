@@ -1,0 +1,46 @@
+<!-- <div class="admin-page">
+    <h1>Categories</h1>
+  
+    <div *ngIf="loading" class="loading">
+      Loading categories...
+    </div>
+  
+    <div *ngIf="error" class="error">
+      {{ error }}
+    </div>
+  
+    <div *ngIf="!loading && !error">
+      <ul class="category-list">
+        <li *ngFor="let category of categories" class="category-card">
+          <h2>{{ category.name }}</h2>
+          <p>{{ category.description }}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+   -->
+
+   <h1 class="headPage">Categories Page</h1>
+<div class="category-container">
+  <div *ngIf="loading" class="loading">
+    Loading categories...
+  </div>
+
+  <div *ngIf="error" class="error">
+    {{ error }}
+  </div>
+
+  <div *ngIf="!loading && !error" class="category-list">
+    <div class="category-card" *ngFor="let category of categories">
+      <div class="category-header">
+        <h2>{{ category.name }}</h2>
+      </div>
+      <div class="category-body">
+        <p class="category-description">{{ category.description }}</p>
+      </div>
+      <div class="category-footer">
+        <button class="details-button">View Details</button>
+      </div>
+    </div>
+  </div>
+</div>

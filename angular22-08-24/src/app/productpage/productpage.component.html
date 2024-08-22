@@ -1,0 +1,18 @@
+<h1 class="headPage">Products Page</h1>
+<div class="product-container">
+  <div class="product-card" *ngFor="let product of products">
+    <div class="product-header">
+      <h2>{{ product.name }}</h2>
+      <p class="product-code">{{ product.code }}</p>
+    </div>
+    <div class="product-body">
+      <p class="product-description">{{ product.description }}</p>
+      <p class="product-price">Rs.{{ product.price.toFixed(2) }}</p>
+      <!-- <p class="product-stock">In Stock: {{ product.stock }}</p> -->
+    </div>
+    <div class="product-footer">
+      <button>Add to Cart</button>
+      <button class="details-button">View Details</button>
+    </div>
+  </div>
+</div>

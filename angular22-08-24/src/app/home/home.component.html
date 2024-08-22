@@ -1,0 +1,28 @@
+<h2 class="head">Course We Provide</h2>
+  <div class="course-container">
+    
+    <div class="course-box" *ngFor="let course of courses">
+      <div class="course-image">
+        <img *ngIf="course.image" [src]="course.image" alt="{{ course.name }}" />
+      </div>
+      <div class="course-content">
+        <h2>{{ course.name }}</h2>
+        <p [innerHTML]="course.description"></p>
+        <div class="course-details">
+          <p><strong>Price:</strong> {{ course.price | currency }}</p>
+          <p><strong>Category:</strong> {{ course.category_name }}</p>
+          <p><strong>Credit Cost:</strong> {{ course.credit_cost }}</p>
+          <p><strong>Instructor ID:</strong> {{ course.instructor }}</p>
+          <p><strong>Status:</strong> {{ course.active ? 'Active' : 'Inactive' }}</p>
+          <p><strong>Finished:</strong> {{ course.finished ? 'Yes' : 'No' }}</p>
+          <p><strong>Created At:</strong> {{ course.created_at | date:'short' }}</p>
+          <p><strong>Updated At:</strong> {{ course.updated_at | date:'short' }}</p>
+        </div>
+        <div class="course-syllabus" *ngIf="course.syllabus">
+          <h3>Syllabus</h3>
+          <pre>{{ course.syllabus | json }}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  
