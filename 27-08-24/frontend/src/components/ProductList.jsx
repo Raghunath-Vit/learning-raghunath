@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css'; 
 
-const ProductList = ({ searchResults, onEdit }) => {
+const ProductList = ({ searchResults, onEdit, onDelete }) => {
     return (
         <div className="product-list-container">
             {searchResults.length === 0 ? (
@@ -19,6 +19,12 @@ const ProductList = ({ searchResults, onEdit }) => {
                             >
                                 Edit
                             </button>
+                            <button 
+                                onClick={() => onDelete(product._id)}
+                                className="delete-button"
+                            >
+                                Delete
+                            </button>
                         </div>
                     ))}
                 </div>
@@ -28,7 +34,3 @@ const ProductList = ({ searchResults, onEdit }) => {
 };
 
 export default ProductList;
-
-
-
-

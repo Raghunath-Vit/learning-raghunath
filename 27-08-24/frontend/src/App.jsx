@@ -7,7 +7,6 @@ import axios from 'axios';
 const App = () => {
     const [searchResults, setSearchResults] = useState([]);
     const [editingProductId, setEditingProductId] = useState(null);
-    
 
     const fetchSearchResults = () => {
         axios.get('http://localhost:3000/products')
@@ -21,46 +20,44 @@ const App = () => {
 
     const handleCreateProduct = () => {
         setEditingProductId(null);
-        
     };
 
     const handleEditProduct = (id) => {
         setEditingProductId(id);
-        
     };
 
     const handleProductSaved = () => {
-        
         setEditingProductId(null);
-        fetchSearchResults(); 
+        fetchSearchResults();
     };
 
     const handleCancel = () => {
-        
         setEditingProductId(null);
+    };
+
+    const handleDeleteProduct = (id) => {
+        axios.delete(`http://localhost:3000/products/${id}`)
+            .then(() => fetchSearchResults())
+            .catch(error => console.error(error));
     };
 
     return (
         <div>
             <h1>Product Management</h1>
             <ProductForm
-                    productId={editingProductId}
-                    onProductSaved={handleProductSaved}
-                    onCancel={handleCancel}
-                />
+                productId={editingProductId}
+                onProductSaved={handleProductSaved}
+                onCancel={handleCancel}
+            />
             <SearchForm onSearchResults={handleSearchResults} />
-            <button onClick={handleCreateProduct}>Add New Product</button>
-            <ProductList searchResults={searchResults} onEdit={handleEditProduct} />
-            
+           
+            <ProductList 
+                searchResults={searchResults} 
+                onEdit={handleEditProduct} 
+                onDelete={handleDeleteProduct}
+            />
         </div>
     );
 };
 
 export default App;
-
-
-
-
-
-
-

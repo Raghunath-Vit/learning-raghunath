@@ -16,7 +16,10 @@ const ProductForm = ({ productId, onProductSaved = () => {}, onCancel = () => {}
             setIsEdit(true);
             axios.get(`http://localhost:3000/products/${productId}`)
                 .then(response => setProduct(response.data))
-                .catch(error => console.error(error));
+                .catch(error => console.error('Error fetching product:', error));
+        } else {
+            setIsEdit(false);
+            setProduct({ name: '', price: '', availability: 'available' });
         }
     }, [productId]);
 
@@ -45,11 +48,13 @@ const ProductForm = ({ productId, onProductSaved = () => {}, onCancel = () => {}
                 fetchProducts(); 
                 onProductSaved();
             })
-            .catch(error => console.error(error))
+            .catch(error => console.error('Error submitting product:', error))
             .finally(() => {
                 onCancel();
             });
     };
+
+   
 
     return (
         <div className="product-form-container">
@@ -125,7 +130,3 @@ const ProductForm = ({ productId, onProductSaved = () => {}, onCancel = () => {}
 };
 
 export default ProductForm;
-
-
-
-
