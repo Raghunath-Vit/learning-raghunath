@@ -1,6 +1,5 @@
-var mongoose = require("mongoose");
-//getting Schema class from mongoose.Schema
-var Schema = mongoose.Schema;
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 const UserSchema = Schema({
   username: {
     type: String,

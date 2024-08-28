@@ -1,9 +1,21 @@
-var mongoose=require('mongoose');
+const mongoose = require("mongoose");
 
-var authorSchema=new mongoose.Schema({
-    first_Name:{type:String,required:true,maxLength:50},
-    last_Name:{type:String,required:true,maxLength:100},
-    dob:{type:Date},
-    dod:{Date},
+const authorSchema = new mongoose.Schema({
+  first_Name: { 
+		type: String, 
+		required: true, 
+		maxLength: 50 
+	},
+  last_Name: { 
+		type: String, 
+		required: true, 
+		maxLength: 100 
+	},
+  dob: { 
+		type: Date 
+	},
+  dod: { 
+		Date 
+	},
 });
-module.exports=mongoose.model("Author",authorSchema);
+module.exports = mongoose.model("Author", authorSchema);

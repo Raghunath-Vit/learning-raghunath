@@ -1,8 +1,7 @@
-exports.getIndex=function(req, res, next) {
-    res.render('index', { title: 'Express' });
-  };
+exports.getIndex = function (req, res, next) {
+  res.render("index", { title: "Express" });
+};
 
-exports.getContact=function(req,res,next){
-    res.send('index',{title:'contact'})
-  };
-  
+exports.getContact = function (req, res, next) {
+  res.send("index", { title: "contact" });
+};

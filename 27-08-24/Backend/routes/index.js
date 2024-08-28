@@ -1,12 +1,11 @@
-var express = require('express');
+const express = require("express");
 
-var router = express.Router();
-const indexControllers=require("../controllers/index");
+const router = express.Router();
+const indexControllers = require("../controllers/index");
 
 /* GET home page. */
-router.get('/', indexControllers.getIndex);
+router.get("/", indexControllers.getIndex);
 
-router.get("/contact",indexControllers.getContact)
-
+router.get("/contact", indexControllers.getContact);
 
 module.exports = router;

@@ -3,14 +3,42 @@ const Schema = mongoose.Schema;
 const bcrypt=require("bcrypt");
 
 const CarUserSchema = new Schema({
-  username: { type: String, required: true, unique: true },
-  email: { type: String, required: true, unique: true },
-  age: { type: Number, required: true },
-  gender: { type: String, enum: ['male', 'female'], required: true },
-  dob: { type: Date, required: true },
-  city: { type: String, required: true },
-  profession: { type: String, enum: ['IT', 'Sales', 'Unemployed'], required: true },
-  password: { type: String, required: true }
+  username: { 
+		type: String, 
+		required: true, 
+		unique: true 
+	},
+  email: { 
+		type: String, 
+		required: true, 
+		unique: true 
+	},
+  age: { 
+		type: Number, 
+		required: true 
+	},
+  gender: { 
+		type: String, 
+		enum: ['male', 'female'], 
+		required: true 
+	},
+  dob: { 
+		type: Date, 
+		required: true 
+	},
+  city: { 
+		type: String, 
+		required: true
+	},
+  profession: { 
+		type: String, 
+		enum: ['IT', 'Sales', 'Unemployed'], 
+		required: true 
+	},
+  password: { 
+		type: String, 
+		required: true 
+	}
 });
 
 // Encrypt password before saving
