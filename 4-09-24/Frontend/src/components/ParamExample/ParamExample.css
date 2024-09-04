@@ -1,0 +1,34 @@
+.param-example-container {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+.param-example-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.param-example-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.param-example-text {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0;
+}
+
+.param-example-id {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}

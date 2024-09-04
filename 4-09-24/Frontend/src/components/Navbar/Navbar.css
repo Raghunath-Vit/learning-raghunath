@@ -1,0 +1,34 @@
+.navouter{
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+.navul{
+  display: flex;
+  flex-direction: row;
+  padding: 4px;
+}
+
+.navli{
+  list-style: none;
+  color: white;
+  padding-right: 2rem;
+}
+
+.live{
+  text-decoration: none;
+  color: orange;
+}
+
+.notlive{
+  text-decoration: none;
+  color:white
+}
+
+
