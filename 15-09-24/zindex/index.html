@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Stacking Context Example</title>
+  <style>
+   
+div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+  }
+  
+  .pink {
+    background-color: pink;
+    left: 50px;
+    top: 50px;
+    z-index: 1; 
+  }
+  
+  .orange {
+    background-color: orange;
+    left: 80px;
+    top: 80px;
+    z-index: 3;
+  }
+  
+  .blue {
+    background-color: blue;
+    left: 110px;
+    top: 110px;
+    z-index: 2;
+  }
+  
+  .purple {
+    background-color: purple;
+    left: 140px;
+    top: 140px;
+    z-index: 0;
+  }
+  
+  .green {
+    background-color: green;
+    left: 170px;
+    top: 170px;
+    z-index: 100; 
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="pink">
+    <div class="orange"></div>
+  </div>
+  <div class="blue"></div>
+  <div class="purple"></div>
+  <div class="green"></div>
+</body>
+</html>

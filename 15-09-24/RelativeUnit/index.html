@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Project Example</title>
+    <style>
+        /* Relative Units */
+.wrapper {
+    width: 90%;
+    max-width: 940px;
+    background-color: lightgrey;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.wrapper .inner {
+    width: 50%;
+    background-color: lightblue;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Font-relative units */
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1em;
+}
+
+/* CSS Selectors */
+
+/* Descendant Combinator */
+h1 em {
+    color: blue;
+}
+
+/* Child Combinator */
+body > p {
+    color: blue;
+}
+
+/* Next Sibling Combinator */
+h1 + p {
+    color: grey;
+}
+
+/* Following Sibling Combinator */
+h1 ~ p {
+    color: grey;
+}
+
+/* Multiple Class Selectors */
+.modal.modal-red {
+    border: 2px solid red;
+}
+
+/* Nth-Child Selectors */
+li:nth-child(2n) {
+    background-color: lightslategrey;
+    color: white;
+}
+
+li:nth-child(4n-7) {
+    color: green;
+}
+
+li:nth-last-child(2) {
+    color: purple;
+}
+
+li:last-child {
+    color: blue;
+}
+
+li:nth-of-type(even) {
+    background-color: lightgrey;
+}
+
+li:nth-of-type(odd) {
+    background-color: lightcoral;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <p>This div takes up 90% of the viewport width to a maximum of 940px.</p>
+        <div class="inner">
+            <p>The nested div is set to 50%. This makes it 50% of its direct parent.</p>
+        </div>
+    </div>
+
+    <ul class="list">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+        <li>Fifth Item</li>
+        <li>Sixth Item</li>
+        <li>Seventh Item</li>
+        <li>Eighth Item</li>
+        <li>Ninth Item</li>
+        <li>Tenth Item</li>
+    </ul>
+
+    <h1>Title</h1>
+    <span>Recently published</span>
+    <p>This paragraph is in color grey.</p>
+
+    <div class="modal modal-red">
+        This modal has a red border
+    </div>
+
+    <div class="modal">
+        <p class="modal-red">
+            No red border
+        </p>
+    </div>
+</body>
+</html>
