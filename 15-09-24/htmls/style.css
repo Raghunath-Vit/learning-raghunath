@@ -1,0 +1,54 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Button for smooth scrolling */
+  .scroll-btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Resizing an image */
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Setting a custom cursor */
+  body {
+    cursor: url("images/cursor.png"), auto;
+  }
+  
+  /* Centering content */
+  .center {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    margin: 50px auto;
+  }
+  
+  /* Limit paragraph content to a specified number of lines */
+  .limited-content {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Disable text selection */
+  .no-select {
+    user-select: none;
+    background-color: #f8f9fa;
+    padding: 10px;
+  }
+  

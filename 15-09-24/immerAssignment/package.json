@@ -1,0 +1,16 @@
+{
+  "name": "immerassignment",
+  "version": "1.0.0",
+  "main": "immer.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "immer": "^10.1.1"
+  }
+}
